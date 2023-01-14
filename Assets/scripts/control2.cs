@@ -7,7 +7,6 @@ public class control2 : MonoBehaviour
     public Transform Player;
     public float Sensitivity;
     public float zRage = 4.4f;
-    [SerializeField]
     private float speed = 10f;
 
     private Vector3 _previousMouseposition;

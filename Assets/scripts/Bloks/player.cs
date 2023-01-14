@@ -6,6 +6,6 @@ public class player : MonoBehaviour, Ihealth
 {
     public void ChangeHP(int value)
     {
-        
+
     }
 }

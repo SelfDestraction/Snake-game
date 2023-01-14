@@ -6,7 +6,6 @@ public class body : MonoBehaviour
 {
     public float BodySpeed = 5;
     public int Gap = 10;
-
     public GameObject BodyPrefab;
 
     private List<GameObject> BodyParts = new List<GameObject>();
@@ -14,17 +13,6 @@ public class body : MonoBehaviour
 
     void Start()
     {
-        GrowSnake();
-        GrowSnake();
-        GrowSnake();
-        GrowSnake();
-        GrowSnake();
-        GrowSnake();
-        GrowSnake();
-        GrowSnake();
-        GrowSnake();
-        GrowSnake();
-        GrowSnake();
         GrowSnake();
         GrowSnake();
         GrowSnake();
@@ -39,12 +27,9 @@ public class body : MonoBehaviour
         foreach (var body in BodyParts)
         {
             Vector3 point = PositionsHistory[Mathf.Clamp(index * Gap, 0, PositionsHistory.Count - 1)];
-
             Vector3 moveDirection = point - body.transform.position;
             body.transform.position += moveDirection * BodySpeed * Time.deltaTime;
-
             body.transform.LookAt(point);
-
             index++;
         }
     }
@@ -53,5 +38,14 @@ public class body : MonoBehaviour
     {
         GameObject body = Instantiate(BodyPrefab);
         BodyParts.Add(body);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "heal")
+        {
+            Destroy(collision.gameObject);
+            GrowSnake();
+        }
     }
 }
