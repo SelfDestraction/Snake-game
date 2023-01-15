@@ -11,10 +11,10 @@ public class control2 : MonoBehaviour
 
     private Vector3 _previousMouseposition;
 
-    void Update()
+    void FixedUpdate()
     {
         {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            transform.Translate(Vector3.forward * speed * Time.fixedDeltaTime);
         }
 
         if (Input.GetMouseButton(0))

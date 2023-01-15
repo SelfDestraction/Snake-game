@@ -187,8 +187,8 @@ MonoBehaviour:
     y: 0
     width: 228.57143
     height: 717.7143
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -225,23 +225,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1a800000
-      m_LastClickedID: 0
-      m_ExpandedIDs: f41efaff9e20faffbc21faff8623faff4c25faff5626faff6027faff6a28faff182bfaff222dfaff2ac0faffbc1efbff4a56fcfff4ddfcfffce9fcff5a08fdff320efdff9a60fdff3a72fdffbc87fdff0e89fdffb08afdffae8bfdff708cfdff328dfdff84dcfdff6ae2fdff4e49feff824cfeff34fbfffff4ffffff706b0000808000009e830000ce830000568400006a840000868400009e84000070850000288700005887000070870000148d00004a8d0000628d000030940000a2ae0000d8ae0000f0ae0000
+      m_SelectedIDs: 22fbffff
+      m_LastClickedID: -1246
+      m_ExpandedIDs: 34fbffff746b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Area game
+        m_OriginalName: Area game
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 27530
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -270,8 +270,8 @@ MonoBehaviour:
     y: 0
     width: 1067.4286
     height: 717.7143
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -535,9 +535,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -144.54955, y: -37.482407, z: 139.62297}
+    m_Target: {x: -6.2800155, y: 4.494956, z: -5.5936413}
     speed: 2
-    m_Value: {x: -144.54955, y: -37.482407, z: 139.62297}
+    m_Value: {x: -6.2800155, y: 4.494956, z: -5.5936413}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -584,20 +584,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.10029112, y: 0.37436038, z: -0.040761758, w: -0.9209515}
+    m_Target: {x: 0.21834481, y: -0.30352163, z: 0.071759, w: 0.9247414}
     speed: 2
-    m_Value: {x: -0.09890874, y: 0.3744179, z: -0.04019981, w: -0.921093}
+    m_Value: {x: 0.21822646, y: -0.3048938, z: 0.07208298, w: 0.92424077}
   m_Size:
-    m_Target: 109.36242
+    m_Target: 7.2645855
     speed: 2
-    m_Value: 109.36242
+    m_Value: 6.9517565
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 1.0005
+    m_SpeedNormalized: 0.49999997
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -634,8 +634,8 @@ MonoBehaviour:
     y: 0
     width: 378.85718
     height: 717.7143
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -665,7 +665,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 45292
+  controlID: 108
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -685,8 +685,8 @@ MonoBehaviour:
     y: 0
     width: 557.7143
     height: 384.2857
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -787,22 +787,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/priff/snake
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/priff/snake
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\LRN\GitHub\Snake-game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b86d0000
-    m_LastClickedID: 28088
-    m_ExpandedIDs: 00000000a86d0000aa6d0000ba6d000000ca9a3b
+    m_SelectedIDs: 06840000
+    m_LastClickedID: 33798
+    m_ExpandedIDs: 00000000ca6d0000cc6d0000e06d0000e46d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -830,7 +830,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a86d0000aa6d000000ca9a3b
+    m_ExpandedIDs: 00000000ca6d0000cc6d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -855,8 +855,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 1a800000
-    m_LastClickedInstanceID: 32794
+    m_SelectedInstanceIDs: 22fbffff
+    m_LastClickedInstanceID: -1246
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
