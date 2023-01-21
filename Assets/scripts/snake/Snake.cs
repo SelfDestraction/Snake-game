@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.PlayerLoop;
@@ -11,6 +12,7 @@ public class Snake : MonoBehaviour
     [SerializeField] private int _tailSize;
     [SerializeField] private float _speed;
     [SerializeField] private float _tailSpringiness;
+    [SerializeField] GameObject _gameOver;
 
     private List<Segment> _tail;
     private SnakeGenerate _tailGenerator;
@@ -62,9 +64,14 @@ public class Snake : MonoBehaviour
         _tail.Remove(deletedSegment);
         Destroy(deletedSegment.gameObject);
         SizeUpdated?.Invoke(_tail.Count);
+        if(_tail.Count == 0)
+        {
+            _gameOver.SetActive(true);
+            gameObject.SetActive(false);
+        }
     }
 
-    private void OnHealCollected(int healSize)
+private void OnHealCollected(int healSize)
     {
         _tail.AddRange(_tailGenerator.Generate(healSize));
         SizeUpdated?.Invoke(_tail.Count);

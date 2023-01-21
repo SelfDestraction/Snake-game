@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class Block : MonoBehaviour
 {
     [SerializeField] private Vector2Int _destroyPriceRange;
@@ -25,9 +26,9 @@ public class Block : MonoBehaviour
         _filling++;
         FillingUpdated?.Invoke(LeftToFill);
 
-        if ( _filling == _destroyPrice)
+        if (_filling == _destroyPrice)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
