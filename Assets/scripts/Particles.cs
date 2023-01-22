@@ -8,6 +8,7 @@ public class Particles : MonoBehaviour
 {
     public GameObject _particles;
 
+
     private void Start()
     {
         _particles.SetActive(false);
@@ -15,15 +16,18 @@ public class Particles : MonoBehaviour
 
     private void Update()
     {
-
+        
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        _particles.SetActive(true);
+        if(other.tag == "Eater")
+        {
+            _particles.SetActive(true);
+        }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
         _particles.SetActive(false);
     }

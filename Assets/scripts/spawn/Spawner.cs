@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private int _distanceBetweenFullLine;
     [SerializeField] private int _distanceBetweenRandomLine;
     [Header("block")]
-    [SerializeField] private Block _blockTemplate;
+    [SerializeField] private GameObject _blockTemplate;
     [SerializeField] private int _blockSpawnChance;
     [Header("wall")]
     [SerializeField] private Wall _WallTempLate;
